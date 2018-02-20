@@ -1,0 +1,18 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>sign in</title>
+	<link rel="stylesheet" href="{% static 'form.css' %}">
+</head>
+<body>
+	<h1>Welcome to the log in page.</h1>
+	<div class="center">
+		<form method="POST" action="{% url 'form' %}">
+			{% csrf_token %}
+		  	{{ form.name }}
+		  	<input type="submit" value="Submit">
+		</form> 
+	</div>	
+</body>
+</html>

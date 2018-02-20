@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ttt</title>
+	<link rel="stylesheet" href="{% static 'ttt.css' %}">
+</head>
+<body>
+	<h1>Hello {{ name }}, {% now "SHORT_DATETIME_FORMAT" %} </h1>
+	<div>
+		<table id="table">			
+		    <tr>
+		        <td id="0"></td>
+		        <td id="1"></td>
+		        <td id="2"></td>
+		    </tr>
+		    <tr>
+		        <td id="3"></td>
+		        <td id="4"></td>
+		        <td id="5"></td>
+		    </tr>
+		    <tr>
+		        <td id="6"></td>
+		        <td id="7"></td>
+		        <td id="8"></td>
+		    </tr>
+		</table>
+	</div>
+	<h1 id="winner"></h1>
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+	<script src="{% static 'sendRequest.js' %}"></script>
+</body>
+</html>

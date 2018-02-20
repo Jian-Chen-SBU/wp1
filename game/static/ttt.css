@@ -1,0 +1,24 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	background: #fdfdfd;
+}
+td {
+	margin: 0px;
+	padding: 0px;
+	border: 1px solid black;
+	height: 100px;
+	width: 100px;
+	text-align: center;
+	font-size: 50px;
+}
+table {
+	border-collapse: collapse;
+	margin: 100px auto;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
